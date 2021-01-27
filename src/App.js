@@ -4,15 +4,8 @@ import {Link, Route, Switch} from 'react-router-dom';
 import Home from './page/Home/Home';
 import Chats from './page/Chats/Chats';
 import Error from './page/Error/Error';
-
-import io from 'socket.io-client';
-
-
+ 
 const App = () => {
-
-    useEffect(() => {
-      io('/');
-    },[])
     return ( 
         <> 
            <header className="header-container">
