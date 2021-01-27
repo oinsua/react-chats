@@ -18,8 +18,8 @@ export const InputF = styled.input`
                     padding: .2rem;
                     background-color: whitesmoke;
                     border: none;
-                    border-bottom-right-radius: 10px;
-                    border-top-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border-top-left-radius: 10px;
                     font-size: 1rem;
                     height: 29px;
 `

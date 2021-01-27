@@ -4,28 +4,26 @@ import {Link, Route, Switch} from 'react-router-dom';
 import Home from './page/Home/Home';
 import Chats from './page/Chats/Chats';
 import Error from './page/Error/Error';
+//Importar estiled components
+import {Header, Img, H1, DIV} from './styled';
+//Importar archivos
+import Logo from './asset/img/logo.png';
  
 const App = () => {
     return ( 
         <> 
-           <header className="header-container">
-                     <div className="menu-container">
-                          <h1>Header del Chats -React</h1>
-                     </div>
-            </header>
-             <nav className="nav-container">
-                        <Link to="/" className="logo-container">
-                            <h4>Aqui va el logo del chats</h4>
-                        </Link>
-             </nav>
-                <section className="section-search">
-                    <Switch>
-                        <Route path="/" exact><Home/></Route>
-                        <Route path="/chats"><Chats/></Route>
-                        <Route path="/error"><Error/></Route>
-                    </Switch>
-                </section>
-            <footer className="footer">Copyrigth</footer>
+           <DIV>
+                <Header>
+                    <H1>Web</H1>
+                    <Img src={Logo} alt="Logo" />
+                    <H1>Chat</H1>
+                </Header>
+           </DIV>
+            <Switch>
+                <Route path="/" exact><Home/></Route>
+                <Route path="/chats"><Chats/></Route>
+                <Route path="/error"><Error/></Route>
+            </Switch>
         </>
     );
 }
