@@ -67,8 +67,7 @@ module.exports = ({mode}) => ({
         devServer: {
                 contentBase: path.join(__dirname, "public"),
                 compress: true,
-                historyApiFallback: true,
-                open: true
+                historyApiFallback: true
             },
         plugins:[
             new CleanWebpackPlugin(),

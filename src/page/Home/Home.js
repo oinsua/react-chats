@@ -19,10 +19,10 @@ const Home = () => {
 
     const onSubmit = useCallback(async (data) => {
         const socket = io();
-        if(data.chats.length !== 0){
-            await socket.emit('new user', data.chats, res => {
+        if(data.username.length !== 0){
+            await socket.emit('new user', data.username, res => {
                   console.log('respuesta del cb', res)
-                  res ? history.push(`/chats`) : setErrorUse(true);
+                  res ? history.push(`/chats/${data.username}`) : setErrorUse(true);
               })
           }         
     }, [socket])
@@ -31,13 +31,13 @@ const Home = () => {
         <Div_Form>
         <form onSubmit={handleSubmit(onSubmit)}>
                 <Div_Input>
-                    <Input  name="chats" type="text" register={register} validate={{required: true, maxLength: 100, minLength: 1}} msg="Enter your Username" view_label={false} />
-                    <Button name="enviar" value="Send" type="submit"/>
+                    <Input  name="username" type="text" register={register} validate={{required: true, maxLength: 100, minLength: 1}} msg="Enter your Username" view_label={false} />
+                    <Button name="send" value="Send" type="submit"/>
                 </Div_Input>
                 <Span_Error>
-                        {errors.chats?.type === "required" && "Your username is required"}
-                        {errors.chats?.type === "maxLength" && "Your username exceed maxLength = 100"}
-                        {errorUser ? <p>Your Username is Use!!!</p> : ''}
+                        {errors.username?.type === "required" && "Your username is required"}
+                        {errors.username?.type === "maxLength" && "Your username exceed maxLength = 100"}
+                        {errorUser ? <p>Username is Active!</p> : ''}
                 </Span_Error>
         </form>
         </Div_Form>

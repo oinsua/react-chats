@@ -15,9 +15,9 @@
     --brand-color_2: #00DBAD;
     --brand-color_3: #00B6B1;
     --brand-color_4: #0090A2;
-    --brand-color_5: #006A82;
+    --brand-color_5: hsla(221, 100%, 31%, 0.83);
     --brand-color_6: #2F4858; 
-    --brand-color_7: #00ccff;
+    --brand-color_7: hsla(238, 100%, 22%, 0.9);
     --brand-color_8: #0099ff;
     --brand-color_9: #f54747;
     --brand-color_10: #f8f524;
@@ -32,7 +32,6 @@
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    
   }
 
   .root-container{
