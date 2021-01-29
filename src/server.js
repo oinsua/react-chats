@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 //webpack. Vamos a configurarlo para que cada vez que se produzca un cambio en "src" webpack transforme y empquete en "public"
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
-const config = require('./webpack.config')
+const config = require('../webpack.config')
 
 const app = express();
 const server = http.createServer(app); //Crear un server a traves de http para establecer la coneccion websocket
@@ -20,7 +20,7 @@ app.set("port", process.env.PORT || 3000) //Asignar un puerto en caso de que el 
 app.use(express.static(path.join(__dirname, 'public')));  //Definir el directorio con los archivos que van al navegador
 
 //Estableciendo una conexion de socket con el cliente.
-require('./src/socket/socket')(io);
+require('./socket/socket')(io);
 
 //Conectando a la base de datos
 mongoose.connect('mongodb://localhost/chat')

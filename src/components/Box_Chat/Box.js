@@ -29,7 +29,7 @@ const Box = ({username}) => {
             <Div_Form>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Div_Input>
-                        <Input  name="chats"  register={register} validate={{required: true, maxLength: 100, minLength: 1}} msg="Enter a Message" view_label={false}/>
+                        <Input  name="chats"  register={register} validate={{required: true, maxLength: 250, minLength: 1}} msg="Enter a Message" view_label={false}/>
                         <Button name="send" value="Send" type="submit" register={register} />
                     </Div_Input>
                 </form>
