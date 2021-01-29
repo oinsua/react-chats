@@ -1,13 +1,14 @@
 import styled from '@emotion/styled';
 
 export const Div_Form = styled.div`
+                                background-color: var(--brand-color_4);
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
-                                width: 95%;
-                                border: 5px solid var(--brand-color_5);
-                                margin: 5px;
+                                width: 280px;
+                                border: 5px solid var(--theme-body-border);
+                                margin: 2px;
                                 border-radius: 10px;
 `
  

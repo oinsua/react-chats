@@ -4,7 +4,7 @@ import {Button_Form} from './styled'
 const Button = ({id, name, style, value, type, disable}) => {
     return (
         <>
-            <Button_Form 
+            <Button_Form  
                  id={id}
                  name={name}
                  type={type}

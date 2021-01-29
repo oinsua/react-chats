@@ -13,7 +13,7 @@ export const Label = styled.label`
 
 export const InputF = styled.input`
                     display: inline-block;
-                    width: 200px;
+                    width: 170px;
                     margin: 0;
                     padding: .2rem;
                     background-color: whitesmoke;

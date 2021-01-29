@@ -1,11 +1,17 @@
 import styled from '@emotion/styled';
+import {Link as LinkS} from 'react-router-dom';
 
 export const Div_Header = styled.div`
+                                    background-color: var(--brand-color_4);
                                     width: 96%;
                                     height: 50px;
-                                    border: 5px solid var(--brand-color_5);
+                                    border: 5px solid var(--theme-body-border);
                                     border-radius: 10px;
                                     margin: 1px;
+`
+export const Link = styled(LinkS)`
+                                text-decoration: none;
+                                color: var(--theme-title) ;
 `
 
 export const Span_left = styled.span`
@@ -14,9 +20,10 @@ export const Span_left = styled.span`
                                     justify-content: center;
                                     font-family: var(--font-fam);
                                     font-size: 1.2rem;
-                                    color: var(--brand-color_1);
+                                    color: var(--theme-title);
                                     font-weight: 700;
                                     margin: 5px;
+                                    text-transform: capitalize;
                                     
 `
 
@@ -25,8 +32,8 @@ export const Span_right = styled.span`
                                     display:flex;
                                     justify-content: center;
                                     font-family: var(--font-fam);
-                                    font-size: 2rem;
-                                    color: var(--brand-color_1);
+                                    font-size: 1.5rem;
+                                    color: var(--theme-title);
                                     font-weight: 700;
                                     margin: 5px;
 `

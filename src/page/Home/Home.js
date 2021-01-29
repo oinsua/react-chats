@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react'
+import React, { useState} from 'react'
 import io from 'socket.io-client';
 //Importando hooks
 import {useForm} from 'react-hook-form';
@@ -8,7 +8,6 @@ import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
 //Importando styled
 import {Div_Form, Div_Input, Span_Error}  from './styled';
-import socket from '../../../api/socket';
 
 const Home = () => {
 
@@ -17,15 +16,15 @@ const Home = () => {
      const history = useHistory(); //Se crea un objeto para la navegacion
      const [errorUser, setErrorUse] = useState(false);
 
-    const onSubmit = useCallback(async (data) => {
+    const onSubmit =  (data) => {
         const socket = io();
         if(data.username.length !== 0){
-            await socket.emit('new user', data.username, res => {
+            socket.emit('new user', data.username, res => {
                   console.log('respuesta del cb', res)
                   res ? history.push(`/chats/${data.username}`) : setErrorUse(true);
               })
           }         
-    }, [socket])
+    }
     
     return (
         <Div_Form>

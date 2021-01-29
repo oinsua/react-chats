@@ -27,14 +27,15 @@ export const Img = styled.img`
 `
 
 export const H1 = styled.h1`
-                    color: var(--brand-color_1);
+                    color: var(--theme-title);
 `
 
 export const DIV = styled.div`
-                        border: 5px solid var(--brand-color_5);
+                        background-color: var(--brand-color_4);
+                        border: 5px solid var(--theme-body-border);
                         border-radius: 10px;
                         margin: 10px;
                         width: 100%;
-                        max-width: 310px;
+                        max-width: 280px;
                         height: 80px;
 `

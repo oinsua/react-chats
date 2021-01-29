@@ -2,14 +2,14 @@ import styled from '@emotion/styled';
 
 export const Button_Form = styled.button`
                                 display: inline-block;
-                                margin: 0;
-                                background-color: var(--brand-color_12);
-                                color: var(--theme-body-txt);
+                                margin-right: 2px;
+                                background-color: var(--brand-color_7);
+                                color: var(--theme-title);
                                 font-size: 0.8rem;
                                 padding: .2rem;
                                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                                 font-weight: 900;
-                                width: 70px;
+                                width: 60px;
                                 height: 36px;
                                 border: none;
                                 border-top: 2px solid var(--theme-body-txt);

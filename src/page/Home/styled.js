@@ -1,15 +1,16 @@
 import styled from '@emotion/styled';
 
 export const Div_Form = styled.div`
+                                background-color: var(--brand-color_4);
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
                                 width: 100%;
-                                border: 5px solid var(--brand-color_5);
+                                border: 5px solid var(--theme-body-border);
                                 margin: 10px;
                                 border-radius: 10px;
-                                max-width: 310px;
+                                max-width: 280px;
                                 height: 200px;
 `
 
