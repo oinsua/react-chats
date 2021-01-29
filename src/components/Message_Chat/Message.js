@@ -12,6 +12,7 @@ const Message = ({username}) => {
     /*Efecto que trae los mensajes que se han producido */
     useEffect(() => {
         socket.on('all messages', (listMsg) => {
+            console.log('all messages',listMsg );
            setMessages(listMsg);
         })
         return () => {
