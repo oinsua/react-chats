@@ -17,6 +17,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@leanup/cli": "^1.0.90",
+    "@leanup/cli-preact": "^1.0.90",
     "body-parse": "^0.1.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.13",
@@ -50,7 +52,7 @@
     "enzyme-adapter-react-15": "^1.4.3",
     "enzyme-to-json": "^3.6.1",
     "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^4.5.1",
+    "html-webpack-plugin": "^5.0.0-alpha.6",
     "image-minimizer-webpack-plugin": "^2.2.0",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-jpegtran": "^7.0.0",
