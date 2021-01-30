@@ -9,7 +9,7 @@ import Header from '../../components/Header_Chat/Header';
 //Importar Estilos
 import {Div_Chat, Div_Container} from './styled';
 //Importando el favicon
-import favicon from '../../asset/img/favicon.png'
+//import favicon from '../../asset/img/favicon.png'
 
 const Chats = () => {
     const socket = io(); 
@@ -28,7 +28,7 @@ const Chats = () => {
                 <meta name="application-name" content="web_chat" />
                 <meta name="description" content="web_chat"/>
                 <meta name="google" content="notranslate"/>
-                <link rel="icon" href={favicon} sizes="32x32" type="image/png"></link>
+                <link rel="icon" href="{favicon}" sizes="32x32" type="image/png"></link>
         </Helmet>
         <Div_Container>
             <Div_Chat>

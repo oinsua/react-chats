@@ -10,7 +10,7 @@ import Button from '../../components/Button/Button';
 //Importando styled
 import {Div_Form, Div_Input, Span_Error}  from './styled';
 //Importando el favicon
-import favicon from '../../asset/img/favicon.png'
+//import favicon from '../../asset/img/favicon.png';
 
 const Home = () => {
 
@@ -35,7 +35,7 @@ const Home = () => {
                 <meta name="application-name" content="home_web_chat" />
                 <meta name="description" content="home_web_chat"/>
                 <meta name="google" content="notranslate"/>
-                <link rel="icon" href={favicon} sizes="32x32" type="image/png"></link>
+                <link rel="icon" href="{/* favicon */}" sizes="32x32" type="image/png"></link>
              </Helmet>
             <Div_Form>
             <form onSubmit={handleSubmit(onSubmit)}>

@@ -1,9 +1,13 @@
 import React from 'react';
-import {render} from '@testing-library/react';
+import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json'; 
 import Home from '../page/Home/Home';
 
-test('render without crashing', () => {
-    const {getByText} = render(<Home/>);
-    const linkElement = getByText(/Web/i);
-    expect(linkElement).toBeInTheDocument();
-})
+it('renders correctly', () => {
+  const wrapper = shallow(
+    <Home/>
+  );
+ 
+  expect(toJson(wrapper)).toMatchSnapshot();
+});
