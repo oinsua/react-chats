@@ -1,7 +1,7 @@
 const express = require('express');
 const http = require('http');
 const path = require('path');
-const mongoose = require('mongoose');
+/* const mongoose = require('mongoose'); */
 
 //webpack. Vamos a configurarlo para que cada vez que se produzca un cambio en "src" webpack transforme y empquete en "public"
 const webpack = require('webpack');
@@ -22,10 +22,10 @@ app.use(express.static(path.join(__dirname, 'public')));  //Definir el directori
 //Estableciendo una conexion de socket con el cliente.
 require('./socket/socket')(io);
 
-//Conectando a la base de datos
+/* //Conectando a la base de datos
 mongoose.connect('mongodb://localhost/chat')
 			   .then(db => console.log('db is connected'))
-			   .catch(error => console.log('db is not connected, error:',error ))
+			   .catch(error => console.log('db is not connected, error:',error )) */
 
 //Iniciando el servidor por el puerto 3000
 server.listen(app.get('port'), ()=>{
