@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Box correctly 1`] = `
+<Div_Form>
+  <form
+    onSubmit={[Function]}
+  >
+    <Div_Input>
+      <Input
+        msg="Enter a Message"
+        name="chats"
+        register={[Function]}
+        validate={
+          Object {
+            "maxLength": 250,
+            "minLength": 1,
+            "required": true,
+          }
+        }
+        view_label={false}
+      />
+      <Button
+        name="send"
+        register={[Function]}
+        type="submit"
+        value="Send"
+      />
+    </Div_Input>
+  </form>
+  <Span_Error />
+</Div_Form>
+`;
+
+exports[`render Chats correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Chats />
+</Router>
+`;
+
+exports[`render Home correctly 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Home_Web_Chat
+    </title>
+    <meta
+      content="home_web_chat"
+      name="application-name"
+    />
+    <meta
+      content="home_web_chat"
+      name="description"
+    />
+    <meta
+      content="notranslate"
+      name="google"
+    />
+    <link
+      href="favicon.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+  </HelmetWrapper>
+  <Div_Form>
+    <form
+      onSubmit={[Function]}
+    >
+      <Div_Input>
+        <Input
+          msg="Enter your Username"
+          name="username"
+          register={[Function]}
+          type="text"
+          validate={
+            Object {
+              "maxLength": 100,
+              "minLength": 1,
+              "required": true,
+            }
+          }
+          view_label={false}
+        />
+        <Button
+          name="send"
+          type="submit"
+          value="Send"
+        />
+      </Div_Input>
+      <Span_Error />
+    </form>
+  </Div_Form>
+</Fragment>
+`;
+
+exports[`render Home correctly 2`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Chats />
+</Router>
+`;
+
+exports[`render Home correctly 3`] = `
+<Div_Msg>
+  <div />
+</Div_Msg>
+`;
+
+exports[`render Message correctly 1`] = `
+<Div_Msg>
+  <div />
+</Div_Msg>
+`;
+
+exports[`renders correctly 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Home_Web_Chat
+    </title>
+    <meta
+      content="home_web_chat"
+      name="application-name"
+    />
+    <meta
+      content="home_web_chat"
+      name="description"
+    />
+    <meta
+      content="notranslate"
+      name="google"
+    />
+    <link
+      href="{/* favicon */}"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+  </HelmetWrapper>
+  <Div_Form>
+    <form
+      onSubmit={[Function]}
+    >
+      <Div_Input>
+        <Input
+          msg="Enter your Username"
+          name="username"
+          register={[Function]}
+          type="text"
+          validate={
+            Object {
+              "maxLength": 100,
+              "minLength": 1,
+              "required": true,
+            }
+          }
+          view_label={false}
+        />
+        <Button
+          name="send"
+          type="submit"
+          value="Send"
+        />
+      </Div_Input>
+      <Span_Error />
+    </form>
+  </Div_Form>
+</Fragment>
+`;
