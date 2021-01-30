@@ -12,11 +12,11 @@ module.exports =  (io) => {
             console.log('new user connected', socket.user);
             socket.broadcast.emit('all messages', listMsg);
         })
-        /* socket.on('connected', async (user) => {
+        socket.on('connected', async (user) => {
             console.log('new user connected', user);
             let messages = await ChatSchema.find({});
             socket.broadcast.emit('all messages', messages);
-        }) */
+        })
         
         //Evento que establece como se interrumpe el enlace entre el cliente y el server
         socket.on('disconnected', () => {
@@ -44,11 +44,11 @@ module.exports =  (io) => {
                 from: data.from,
                 msg: data.msg                
             });
-           /*  const newMsg = new ChatSchema({ //Creamos el objeto segun el esquema definido
+            const newMsg = new ChatSchema({ //Creamos el objeto segun el esquema definido
                 from: data.from,
                 msg: data.msg
             });
-            await newMsg.save(); */
+            await newMsg.save();
 
             socket.broadcast.emit('new message', {
                 from: data.from,
