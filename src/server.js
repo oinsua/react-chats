@@ -6,13 +6,13 @@ const path = require('path');
 //webpack. Vamos a configurarlo para que cada vez que se produzca un cambio en "src" webpack transforme y empquete en "public"
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
-const config = require('../webpack.config')
+const config = require('../webpack.config');
 
 const app = express();
 const server = http.createServer(app); //Crear un server a traves de http para establecer la coneccion websocket
 const io = require('socket.io')(server) //Establecer la conexion en tiempo real a traves de socketio con el server
 //Middleware
-app.use(webpackDevMiddleware(webpack(config({mode:'development'}))))
+app.use(webpackDevMiddleware(webpack(config({mode:'production'}))))
   
 app.set("port", process.env.PORT || 3000) //Asignar un puerto en caso de que el servidor no me lo asigne
 

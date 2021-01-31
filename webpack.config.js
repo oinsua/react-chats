@@ -37,7 +37,6 @@ module.exports = ({mode}) => ({
      entry: {
         main: path.resolve(__dirname, './src'),
       },
- 
      /**Salidas **/    
      output: {
                  path: path.resolve(__dirname, 'public'),
@@ -46,7 +45,7 @@ module.exports = ({mode}) => ({
              },
 
      /** Modo Production o Development */
-     mode: process.env.NODE_ENV || 'development',
+     mode: process.env.NODE_ENV || 'production',
 
      module: { 
                 rules: [
