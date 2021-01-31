@@ -76,7 +76,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
-    "build": " start && webpack --mode production",
+    "build": " node ./src/server.js && webpack --mode production",
     "test": "jest"
   },
   "keywords": [],
