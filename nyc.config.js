@@ -1,1 +1,1 @@
-module.exports = require('@leanup/cli-core-test/nyc.config');
+module.exports = require('@leanup/stack/nyc.config');
